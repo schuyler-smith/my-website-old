@@ -1,5 +1,6 @@
 ---
 permalink: /
+title: Schuyler - Home
 ---
 <!DOCTYPE html>
 <html>
@@ -11,7 +12,7 @@ permalink: /
         <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
         <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
         {% if site.page_icon %}
-        <link rel="shortcut icon" href="{{ site.page_icon }}" />
+            <link rel="shortcut icon" href="{{ site.page_icon }}" />
         {% endif %}
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -19,7 +20,7 @@ permalink: /
         <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
     </head>
 
-    <body class="avatar">
+    <body class="home-page">
         <img src="imgs/background.jpg" id="fullscreen">
         <div id="navmenu">
             <ul>
@@ -44,41 +45,41 @@ permalink: /
                 {% endif %}                
             </ul>
         </div>
-        <div class="content" id="medialist">
+        <div class="home-content">
             <img src="{{ site.avatar }}" id="avatar">         
             <h1>{{ site.name }}</h1>
             <h3>{{ site.description }}</h3>
-            <ul>
+            <ul  id="medialist">
                 {% if site.email %}
-                <li><a class="fa fa-2x fa-envelope" href="mailto:{{ site.email }}"><span class="description">E-mail</span></a></li>
+                <li><a class="fa fa-2x fa-envelope" href="mailto:{{ site.email }}"><span class="description" target="_blank">E-mail</span></a></li>
                 {% endif %}
 
                 {% if site.google_scholar %}
-                <li><a class="ai ai-2x ai-google-scholar" href="{{ site.google_scholar }}"><span class="description">Scholar</span></a></li>
+                <li><a class="ai ai-2x ai-google-scholar" href="{{ site.google_scholar }}"><span class="description" target="_blank">Scholar</span></a></li>
                 {% endif %}
 
                 {% if site.github_username %}
-                <li><a class="fa fa-2x fa-github" href="https://github.com/{{ site.github_username }}"><span class="description">GitHub</span></a></li>
+                <li><a class="fa fa-2x fa-github" href="https://github.com/{{ site.github_username }}" target="_blank" ><span class="description">GitHub</span></a></li>
                 {% endif %}
 
                 {% if site.instagram_username %}
-                <li><a class="fa fa-2x fa-instagram" href="https://instagram.com/{{ site.instagram_username }}"><span class="description">Instagram</span></a></li>
+                <li><a class="fa fa-2x fa-instagram" href="https://instagram.com/{{ site.instagram_username }}" target="_blank"><span class="description">Instagram</span></a></li>
                 {% endif %}
 
                 {% if site.cv %}
-                <li><a class="ai ai-2x ai-cv" href="{{ site.cv }}"><span class="description">CV</span></a></li>
+                <li><a class="ai ai-2x ai-cv" href="{{ site.cv }}" target="_blank" ><span class="description">CV</span></a></li>
                 {% endif %}
 
                 {% if site.linkedin_username %}
-                <li><a class="fa fa-2x fa-linkedin" href="https://linkedin.com/in/{{ site.linkedin_username }}"><span class="description">LinkedIn</span></a></li>
+                <li><a class="fa fa-2x fa-linkedin" href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank"><span class="description">LinkedIn</span></a></li>
                 {% endif %}
 
                 {% if site.twitter_username %}
-                <li><a class="fa fa-2x fa-twitter" href="https://twitter.com/{{ site.twitter_username }}"><span class="description">Twitter</span></a></li>
+                <li><a class="fa fa-2x fa-twitter" href="https://twitter.com/{{ site.twitter_username }}" target="_blank"><span class="description">Twitter</span></a></li>
                 {% endif %}
 
                 {% if site.steam_username %}
-                <li><a class="fa fa-2x fa-steam" href="http://steamcommunity.com/id/{{ site.steam_username }}"><span class="description">Steam</span></a></li>
+                <li><a class="fa fa-2x fa-steam" href="http://steamcommunity.com/id/{{ site.steam_username }}" target="_blank"><span class="description">Steam</span></a></li>
                 {% endif %}
             </ul>
         </div>

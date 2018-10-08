@@ -1,4 +1,186 @@
-.avatar {
+.home-page {
+    font-family: 'Open Sans',Helvetica,Arial,sans-serif;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute; 
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 0;
+}
+.home-content {
+    padding-top: 100px;
+    padding-bottom: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+.subpage {
+    font-family: 'Open Sans',Helvetica,Arial,sans-serif;
+    background-color: rgba(0, 0, 0, 0);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 0;
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.content {
+    padding-top: 5px;
+    padding-bottom: 10%;
+    text-align: center;
+}
+#texty {
+    font-family: 'Open Sans',Helvetica,Arial,sans-serif;
+    background-color: rgba(0, 0, 0, .7);
+    margin-left: 5%;
+    margin-right: 5%;
+    color: white;
+    font-size: 24px;
+    padding-bottom: 10%;
+}
+#medialist {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 0;
+    padding-bottom: 0px;
+    text-align: center;
+}
+h1 {
+    color: white;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    font-size: 4em;
+    font-family: 'Open Sans';
+    margin: -10px 0;
+}
+h3 {
+    color: white;
+    padding-bottom: 20px;
+    font-weight: thin;
+}
+#avatar {
+    height: 380px;
+    border-radius: 100%;
+    border: 5px solid white;
+    margin-bottom: 40px;
+}
+#medialist ul {
+    list-style: none;
+    padding: 0;
+    padding-top: 10px;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 1); 
+}
+#medialist li {
+    border-radius: 100%;
+    border: 2px solid white;
+    color: white;
+    margin: 8px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin-top: 0;
+    padding-top: 0;
+    display: inline-block;
+    list-style: none;
+    width: 65px;
+    height: 65px;
+}
+#medialist li:hover {
+    color: white;
+    -webkit-transition: 500ms;
+    -moz-transition: 500ms;
+    transition: 0ms;
+    text-decoration: none;
+    background-color: #369;
+}
+#medialist a {
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+}
+.description {
+    display: none;
+}
+#fullscreen {
+    z-index: -999;
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+#navmenu {
+   float: left;
+   width: 100%;
+   background-color: rgba(0, 0, 0, 0);
+   border-top:2px solid #000;
+   overflow: hidden;
+   position: relative;
+}
+#navmenu ul {
+   clear: left;
+   float: left;
+   list-style: none;
+   margin: 1px;
+   padding: 0;
+   position: fixed;
+   left: 50%;
+   text-align: center;
+   background-color: rgba(0, 0, 0, 0);
+}
+#navmenu li {
+   display: block;
+   float: left;
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   position: relative;
+   right: 50%;
+   background-color: #333;
+}
+#navmenu a {
+   display:block;
+   margin:0 0 0 1px;
+   padding:5px 15px;
+   background:#ddd;
+   color:#000;
+   text-decoration: none;
+   line-height: 1.3em;
+   text-transform: capitalize;
+}
+#navmenu a:hover {
+   background:#369;
+   color:#fff;
+}
+#navmenu a.active,
+#navmenu a.active:hover {
+   color:#fff;
+   background:#000;
+   font-weight:bold;
+}
+#navmenu a:hover:not(.active) {
+   background:#369;
+   color:#fff;
+}
+
+@media (max-width: 450px) {
+#avatar {
+    height: 250px;
+    border-radius: 100%;
+    border: 5px solid white;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+.home-page {
     font-family: 'Open Sans',Helvetica,Arial,sans-serif;
     background-color: rgba(0, 0, 0, 0);
     position: absolute; 
@@ -26,96 +208,6 @@
     color: white;
     font-size: 24px;
 }
-
-#fullscreen {
-    z-index: -999;
-    min-height: 100%;
-    min-width: 1024px;
-    width: 100%;
-    height: auto;
-    position: fixed;
-    top: 0;
-    left: 0;
-}
-#avatar {
-    height: 280px;
-    border-radius: 100%;
-    border: 5px solid white;
-    margin-bottom: 40px;
-}
-#navmenu {
-   float: left;
-   width: 100%;
-   background-color: #333;
-   border-bottom:4px solid #000;
-   overflow: hidden;
-   position: relative;
-}
-#navmenu ul {
-   clear: left;
-   float: left;
-   list-style: none;
-   margin: 10px;
-   padding: 0;
-   position: relative;
-   left: 50%;
-   text-align: center;
-   background-color: #333;
-}
-#navmenu li {
-   display:block;
-   float:left;
-   list-style:none;
-   margin:0;
-   padding:0;
-   position:relative;
-   right:50%;
-   background-color: #333;
-}
-#navmenu a {
-   display:block;
-   margin:0 0 0 1px;
-   padding:3px 10px;
-   background:#ddd;
-   color:#000;
-   text-decoration:none;
-   line-height:1.3em;
-   text-transform: capitalize;
-}
-#navmenu a:hover {
-   background:#369;
-   color:#fff;
-}
-#navmenu a.active,
-#navmenu a.active:hover {
-   color:#fff;
-   background:#000;
-   font-weight:bold;
-}
-#navmenu a:hover:not(.active) {
-   background:#369;
-   color:#fff;
-}
-
-h1 {
-    color: white;
-    font-weight: bold;
-    letter-spacing: 0.1em;
-    font-size: 4em;
-    font-family: 'Open Sans';
-    margin: -10px 0;
-}
-h3 {
-    color: white;
-    padding-bottom: 20px;
-    font-weight: thin;
-}
-.content {
-    padding-top: 100px;
-    padding-bottom: 40px;
-    background-color: rgba(0, 0, 0, 0.5);
-    text-align: center;
-}
 .page-medialist {
     padding-top: 0;
     padding-bottom: 0;
@@ -125,45 +217,7 @@ h3 {
     bottom: 0;
     width: 100%;
 }
-#medialist ul {
-    list-style: none;
-    padding: 0;
-}
-#medialist li {
-    border-radius: 100%;
-    border: 2px solid white;
-    color: white;
-    margin: 8px;
-    display: inline-block;
-    list-style: none;
-    width: 65px;
-    height: 65px;
-}
-#medialist li:hover {
-    color: white;
-    text-decoration: none;
-    -webkit-transition: 500ms;
-    -moz-transition: 500ms;
-    transition: 500ms;
-    text-decoration: none;
-    background-color: #369;
-}
-#medialist a {
-    color: white;
-    padding: 15px;
-    text-decoration: none;
-}
-.description {
-    display: none;
-}
 
-@media (max-width: 450px) {
-#avatar {
-    height: 180px;
-    border-radius: 100%;
-    border: 5px solid white;
-    margin-bottom: 40px;
-}
 #medialist ul {
     text-align: center;
 }
