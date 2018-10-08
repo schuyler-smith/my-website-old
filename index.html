@@ -16,10 +16,11 @@ permalink: /
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="/css/academicons/css/academicons.min.css"/>
-        <link rel="stylesheet" href="{{ "/css/front.css" | prepend: site.baseurl }}">
+        <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
     </head>
 
-    <body>
+    <body class="avatar">
+        <img src="imgs/background.jpg" id="fullscreen">
         <div id="navmenu">
             <ul>
                 <li><a class="active">Home</a></li>
@@ -44,9 +45,7 @@ permalink: /
             </ul>
         </div>
         <div class="content" id="medialist">
-            <img src="imgs/background.jpg" id="fullscreen">
-            <img src="{{ site.avatar }}" id="avatar">
-            
+            <img src="{{ site.avatar }}" id="avatar">         
             <h1>{{ site.name }}</h1>
             <h3>{{ site.description }}</h3>
             <ul>
