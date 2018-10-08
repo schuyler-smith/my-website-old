@@ -1,14 +1,14 @@
 # Site settings
 name: Schuyler D. Smith
-description: "Ph.D. Student - Bioinformatics and Computational Biology"
+description: Ph.D. Student - Bioinformatics and Computational Biology
 url: ""
 
 # Delete the lines you don't need
 github_username:  sdsmith1390
 instagram_username:  schuylerds
 email: sdsmith@iastate.edu
-google_scholar: citations?user=fTKo_RgAAAAJ&hl=en&oi=sra
-cv: file/d/1L9kKqpT60JyrhBv6vr0f1qjS--IQVL2b/view
+google_scholar: https://scholar.google.com/citations?user=fTKo_RgAAAAJ&hl=en&oi=sra
+cv: https://drive.google.com/file/d/1L9kKqpT60JyrhBv6vr0f1qjS--IQVL2b/view
 #steam_username: your_steam_username_goes_here
 #facebook_username: your_facebook_username_goes_here
 #twitter_username: your_twitter_username_goes_here

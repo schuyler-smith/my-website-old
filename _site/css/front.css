@@ -12,14 +12,67 @@ body {
     z-index: -999;
     min-height: 100%;
     min-width: 1024px;
-    width: 100%;
+    width: 100%;d
     height: auto;
     position: fixed;
     top: 0;
     left: 0;
 }
+#navmenu {
+   float:left;
+   width:100%;
+   background-color: #333;
+   border-bottom:4px solid #000;
+   overflow:hidden;
+   position:relative;
+}
+#navmenu ul {
+   clear:left;
+   float:left;
+   list-style:none;
+   margin:10px;
+   padding:0;
+   position:relative;
+   left:50%;
+   text-align:center;
+   background-color: #333;
+}
+#navmenu li {
+   display:block;
+   float:left;
+   list-style:none;
+   margin:0;
+   padding:0;
+   position:relative;
+   right:50%;
+   background-color: #333;
+}
+#navmenu a {
+   display:block;
+   margin:0 0 0 1px;
+   padding:3px 10px;
+   background:#ddd;
+   color:#000;
+   text-decoration:none;
+   line-height:1.3em;
+}
+#navmenu a:hover {
+   background:#369;
+   color:#fff;
+}
+#navmenu a.active,
+#navmenu a.active:hover {
+   color:#fff;
+   background:#000;
+   font-weight:bold;
+}
+#navmenu a:hover:not(.active) {
+   background:#369;
+   color:#fff;
+}
+
 #avatar {
-    height: 180px;
+    height: 280px;
     border-radius: 100%;
     border: 5px solid white;
     margin-bottom: 40px;
@@ -43,11 +96,11 @@ h3 {
     background-color: rgba(0, 0, 0, 0.5);
     text-align: center;
 }
-ul {
+#medialist ul {
     list-style: none;
     padding: 0;
 }
-li {
+#medialist li {
     border-radius: 100%;
     border: 2px solid white;
     color: white;
@@ -57,16 +110,16 @@ li {
     width: 65px;
     height: 65px;
 }
-li:hover {
+#medialist li:hover {
     color: white;
     text-decoration: none;
     -webkit-transition: 500ms;
     -moz-transition: 500ms;
     transition: 500ms;
     text-decoration: none;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #369;
 }
-a {
+#medialist a {
     color: white;
     padding: 15px;
     text-decoration: none;
