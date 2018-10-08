@@ -10,41 +10,52 @@ permalink: /
         <meta name="description" content="{{ site.description }}">
         <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
         <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-        {% if site.favicon_img %}
-        <link rel="shortcut icon" href="{{ site.favicon_img_path }}" />
+        {% if site.page_icon %}
+        <link rel="shortcut icon" href="{{ site.page_icon }}" />
         {% endif %}
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="/css/academicons/css/academicons.min.css"/>
-        <link rel="stylesheet" href="{{ "css/front.css" | prepend: site.baseurl }}">
+        <link rel="stylesheet" href="{{ "/css/front.css" | prepend: site.baseurl }}">
     </head>
 
     <body>
         <div id="navmenu">
             <ul>
                 <li><a class="active">Home</a></li>
-                <li><a href="/pages/about/">About</a></li>
-                <li><a href="/pages/research/">Research</a></li>
-                <li><a href="/pages/people/">People</a></li>
-                <li><a href="/pages/photos/">Photos</a></li>
+                {% if site.page_1 %}
+                    <li><a href="/pages/{{ site.page_1 }}">{{site.page_1}}</a></li>
+                {% endif %}
+                {% if site.page_2 %}
+                    <li><a href="/pages/{{ site.page_2 }}">{{site.page_2}}</a></li>
+                {% endif %}
+                {% if site.page_3 %}
+                    <li><a href="/pages/{{ site.page_3 }}">{{site.page_3}}</a></li>
+                {% endif %}
+                {% if site.page_4 %}
+                    <li><a href="/pages/{{ site.page_4 }}">{{site.page_4}}</a></li>
+                {% endif %}
+                {% if site.page_5 %}
+                    <li><a href="/pages/{{ site.page_5 }}">{{site.page_5}}</a></li>
+                {% endif %}
+                {% if site.page_6 %}
+                    <li><a href="/pages/{{ site.page_6 }}">{{site.page_6}}</a></li>
+                {% endif %}                
             </ul>
         </div>
         <div class="content" id="medialist">
-            {% if site.front_img %}
-            <img src="{{ site.front_img_path }}" id="fullscreen">
-            {% endif %}
-            {% if site.avatar %}
-                <img src="{{ site.avatar_img_path }}" id="avatar">
-            {% endif %}
+            <img src="imgs/background.jpg" id="fullscreen">
+            <img src="{{ site.avatar }}" id="avatar">
+            
             <h1>{{ site.name }}</h1>
             <h3>{{ site.description }}</h3>
             <ul>
                 {% if site.email %}
-                <li><a class="fa fa-2x fa-envelope" href="mailto:{{ site.email }}"><span class="description">Email</span></a></li>
+                <li><a class="fa fa-2x fa-envelope" href="mailto:{{ site.email }}"><span class="description">E-mail</span></a></li>
                 {% endif %}
 
                 {% if site.google_scholar %}
-                <li><a class="ai ai-2x ai-google-scholar" href="https://scholar.google.com/{{ site.google_scholar }}"><span class="description">Scholar</span></a></li>
+                <li><a class="ai ai-2x ai-google-scholar" href="{{ site.google_scholar }}"><span class="description">Scholar</span></a></li>
                 {% endif %}
 
                 {% if site.github_username %}
@@ -56,9 +67,8 @@ permalink: /
                 {% endif %}
 
                 {% if site.cv %}
-                <li><a class="ai ai-2x ai-cv" href="https://drive.google.com/{{ site.cv }}"><span class="description">CV</span></a></li>
+                <li><a class="ai ai-2x ai-cv" href="{{ site.cv }}"><span class="description">CV</span></a></li>
                 {% endif %}
-
 
                 {% if site.linkedin_username %}
                 <li><a class="fa fa-2x fa-linkedin" href="https://linkedin.com/in/{{ site.linkedin_username }}"><span class="description">LinkedIn</span></a></li>
@@ -70,14 +80,6 @@ permalink: /
 
                 {% if site.steam_username %}
                 <li><a class="fa fa-2x fa-steam" href="http://steamcommunity.com/id/{{ site.steam_username }}"><span class="description">Steam</span></a></li>
-                {% endif %}
-
-                {% if site.facebook_username %}
-                <li><a class="fa fa-2x fa-facebook" href="https://facebook.com/{{ site.facebook_username }}"><span class="description">Facebook</span></a></li>
-                {% endif %}
-
-                {% if site.google_plus_username %}
-                <li><a class="fa fa-2x fa-google-plus" href="https://plus.google.com/+{{ site.google_plus_username }}"><span class="description">Google +</span></a></li>
                 {% endif %}
             </ul>
         </div>

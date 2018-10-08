@@ -1,5 +1,6 @@
 ---
 permalink: /pages/people/
+title: Schuyler - People
 ---
 <!DOCTYPE html>
 <html>
@@ -16,19 +17,35 @@ permalink: /pages/people/
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="/css/academicons/css/academicons.min.css"/>
-        <link rel="stylesheet" href="{{ "../../css/front.css" | prepend: site.baseurl }}">
+        <link rel="stylesheet" href="{{ "/css/front.css" | prepend: site.baseurl }}">
     </head>
 
     <body>
         <div id="navmenu">
             <ul>
-            	<li><a href="/">Home</a></li>
-                <li><a href="/pages/about/">About</a></li>
-                <li><a href="/pages/research/">Research</a></li>
-                <li><a class="active">People</a></li>
-                <li><a href="/pages/photos/">Photos</a></li>
+                <li><a href="/">Home</a></li>
+                {% if site.page_1 %}
+                    <li><a href="/pages/{{ site.page_1 }}">{{site.page_1}}</a></li>
+                {% endif %}
+                {% if site.page_2 %}
+                    <li><a href="/pages/{{ site.page_2 }}">{{site.page_2}}</a></li>
+                {% endif %}
+                {% if site.page_3 %}
+                    <li><a class="active" href="/pages/{{ site.page_3 }}">{{site.page_3}}</a></li>
+                {% endif %}
+                {% if site.page_4 %}
+                    <li><a href="/pages/{{ site.page_4 }}">{{site.page_4}}</a></li>
+                {% endif %}
+                {% if site.page_5 %}
+                    <li><a href="/pages/{{ site.page_5 }}">{{site.page_5}}</a></li>
+                {% endif %}
+                {% if site.page_6 %}
+                    <li><a href="/pages/{{ site.page_6 }}">{{site.page_6}}</a></li>
+                {% endif %}   
             </ul>
         </div>
+        <div class="content" id="medialist">
+            <img src="/imgs/background.jpg" id="fullscreen">
 
 
 

@@ -18,6 +18,12 @@ body {
     top: 0;
     left: 0;
 }
+#avatar {
+    height: 280px;
+    border-radius: 100%;
+    border: 5px solid white;
+    margin-bottom: 40px;
+}
 #navmenu {
    float:left;
    width:100%;
@@ -55,6 +61,7 @@ body {
    color:#000;
    text-decoration:none;
    line-height:1.3em;
+   text-transform: capitalize;
 }
 #navmenu a:hover {
    background:#369;
@@ -71,12 +78,6 @@ body {
    color:#fff;
 }
 
-#avatar {
-    height: 280px;
-    border-radius: 100%;
-    border: 5px solid white;
-    margin-bottom: 40px;
-}
 h1 {
     color: white;
     font-weight: bold;
