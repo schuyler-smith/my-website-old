@@ -129,10 +129,10 @@ h3 {
 }
 
 @media (max-width: 450px) {
-ul {
+#medialist ul {
     text-align: center;
 }
-li {
+#medialist li {
     border-radius: 0%;
     border: none;
     color: white;
@@ -144,11 +144,11 @@ li {
     height: auto;
     width: auto;
 }
-li:hover {
+#medialist li:hover {
     background-color: none;
     transition: none;
 }
-a {
+#medialist a {
     text-align: justify;
     border: 2px solid white;
     border-radius: 5px;
@@ -157,7 +157,7 @@ a {
     padding-left: 30px;
     width: 70%;
 }
-a:hover {
+#medialist a:hover {
     -webkit-transition: 500ms;
     -moz-transition: 500ms;
     transition: 500ms;
