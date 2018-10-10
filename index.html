@@ -46,18 +46,20 @@ title: Schuyler - Home
             </ul>
         </div>
         <div class="home-content">
-            <img src="{{ site.avatar }}" id="avatar">         
+            <a href="https://github.com/{{ site.github_username }}" target="_blank" >
+            <img src="{{ site.avatar }}" id="avatar">     
+            </a>    
             <h1>{{ site.name }}</h1>
-            <h3>{{ site.description }}</h3>
+            <a href="https://www.bcb.iastate.edu/people/schuyler-smith" target="_blank" ><h3>{{ site.description }}</h3></a>
         </div>
         <div id="medialist">
             <ul>
                 {% if site.email %}
-                <li><a class="fa fa-2x fa-envelope" href="mailto:{{ site.email }}"><span class="description" target="_blank">E-mail</span></a></li>
+                <li><a class="fa fa-2x fa-envelope" href="mailto:{{ site.email }}" target="_blank"><span class="description" >E-mail</span></a></li>
                 {% endif %}
 
                 {% if site.google_scholar %}
-                <li><a class="ai ai-2x ai-google-scholar" href="{{ site.google_scholar }}"><span class="description" target="_blank">Scholar</span></a></li>
+                <li><a class="ai ai-2x ai-google-scholar" href="{{ site.google_scholar }}" target="_blank" ><span class="description" >Scholar</span></a></li>
                 {% endif %}
 
                 {% if site.github_username %}
@@ -65,7 +67,7 @@ title: Schuyler - Home
                 {% endif %}
 
                 {% if site.instagram_username %}
-                <li><a class="fa fa-2x fa-instagram" href="https://instagram.com/{{ site.instagram_username }}" target="_blank"><span class="description">Instagram</span></a></li>
+                <li><a class="fa fa-2x fa-instagram" href="https://instagram.com/{{ site.instagram_username }}" target="_blank" ><span class="description">Instagram</span></a></li>
                 {% endif %}
 
                 {% if site.cv %}
@@ -73,15 +75,15 @@ title: Schuyler - Home
                 {% endif %}
 
                 {% if site.linkedin_username %}
-                <li><a class="fa fa-2x fa-linkedin" href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank"><span class="description">LinkedIn</span></a></li>
+                <li><a class="fa fa-2x fa-linkedin" href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank" ><span class="description">LinkedIn</span></a></li>
                 {% endif %}
 
                 {% if site.twitter_username %}
-                <li><a class="fa fa-2x fa-twitter" href="https://twitter.com/{{ site.twitter_username }}" target="_blank"><span class="description">Twitter</span></a></li>
+                <li><a class="fa fa-2x fa-twitter" href="https://twitter.com/{{ site.twitter_username }}" target="_blank" ><span class="description">Twitter</span></a></li>
                 {% endif %}
 
                 {% if site.steam_username %}
-                <li><a class="fa fa-2x fa-steam" href="http://steamcommunity.com/id/{{ site.steam_username }}" target="_blank"><span class="description">Steam</span></a></li>
+                <li><a class="fa fa-2x fa-steam" href="http://steamcommunity.com/id/{{ site.steam_username }}" target="_blank" ><span class="description">Steam</span></a></li>
                 {% endif %}
             </ul>
         </div>
