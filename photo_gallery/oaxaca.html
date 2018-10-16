@@ -1,11 +1,6 @@
 ---
-permalink: /pages/photos/
-title: Schuyler - Photos
-trips:
-  - panama
-  - oaxaca
-  - trinidad
-
+permalink: /
+title: Schuyler - Home
 ---
 <!DOCTYPE html>
 <html>
@@ -17,7 +12,7 @@ trips:
         <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
         <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
         {% if site.page_icon %}
-        <link rel="shortcut icon" href="{{ site.page_icon }}" />
+            <link rel="shortcut icon" href="{{ site.page_icon }}" />
         {% endif %}
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -25,11 +20,11 @@ trips:
         <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
     </head>
 
-    <body class="subpage">
-        <img src="/imgs/background.jpg" id="fullscreen">
+    <body class="home-page">
+        <img src="imgs/background.jpg" id="fullscreen">
         <div id="navmenu">
             <ul>
-                <li><a href="/">Home</a></li>
+                <li><a class="active">Home</a></li>
                 {% if site.page_1 %}
                     <li><a href="/pages/{{ site.page_1 }}">{{site.page_1}}</a></li>
                 {% endif %}
@@ -40,34 +35,24 @@ trips:
                     <li><a href="/pages/{{ site.page_3 }}">{{site.page_3}}</a></li>
                 {% endif %}
                 {% if site.page_4 %}
-                    <li><a class="active" href="/pages/{{ site.page_4 }}">{{site.page_4}}</a></li>
+                    <li><a href="/pages/{{ site.page_4 }}">{{site.page_4}}</a></li>
                 {% endif %}
                 {% if site.page_5 %}
                     <li><a href="/pages/{{ site.page_5 }}">{{site.page_5}}</a></li>
                 {% endif %}
                 {% if site.page_6 %}
                     <li><a href="/pages/{{ site.page_6 }}">{{site.page_6}}</a></li>
-                {% endif %}   
+                {% endif %}                
             </ul>
         </div>
-
-        <div class="row" style="padding-top: 40px; "> 
-            {% for trip in page.trips %}
-            <div class="container">
-              <a href="/photo_gallery/{{ trip }}.html">
-              <img src="/photo_gallery/{{ trip }}.jpg" alt="{{ trip }}" class="image" style="width:100%">
-              <div class="middle">
-                <div class="text">{{ trip }}</div>
-              </div>
-              </a> 
-            </div>
-               <!--  <a href="/photo_gallery/{{ trip }}.html">
-                <img src="/photo_gallery/{{ trip }}.jpg" alt="{{ trip }}" title="{{ trip }}">
-                </a> -->
-            {% endfor %}
+        <div class="home-content">
+            <a href="https://github.com/{{ site.github_username }}" target="_blank" >
+            <img src="{{ site.avatar }}" id="avatar">     
+            </a>    
+            <h1>{{ site.name }}</h1>
+            <a class="hidden-link" href="https://www.bcb.iastate.edu/people/schuyler-smith" target="_blank" ><h3>{{ site.description }}</h3></a>
         </div>
-
-        <div id="medialist">       
+        <div id="medialist">
             <ul>
                 {% if site.email %}
                 <li><a class="fa fa-2x fa-envelope" href="mailto:{{ site.email }}" target="_blank"><span class="description" >E-mail</span></a></li>
@@ -102,7 +87,5 @@ trips:
                 {% endif %}
             </ul>
         </div>
-
-
-
-</body>
+    </body>
+</html>

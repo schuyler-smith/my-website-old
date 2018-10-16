@@ -1,10 +1,9 @@
 ---
-permalink: /pages/photos/
-title: Schuyler - Photos
+permalink: /photo_gallery/panama
+title: Schuyler - Panama Gallery
+---
 trips:
   - panama
-  - oaxaca
-  - trinidad
 
 ---
 <!DOCTYPE html>
@@ -50,23 +49,17 @@ trips:
                 {% endif %}   
             </ul>
         </div>
-
-        <div class="row" style="padding-top: 40px; "> 
-            {% for trip in page.trips %}
-            <div class="container">
-              <a href="/photo_gallery/{{ trip }}.html">
-              <img src="/photo_gallery/{{ trip }}.jpg" alt="{{ trip }}" class="image" style="width:100%">
-              <div class="middle">
-                <div class="text">{{ trip }}</div>
-              </div>
-              </a> 
+        <div class="row"> 
+            <div style="padding-top: 40px; ">
+                <div class="column">
+                {% for trip in page.trips %}
+                    <a href="{{page.permalink}}{{ trip }}.html">
+                            <img src="/photo_gallery/{{ trip }}.jpg" alt="{{ trip }}" style="width:30%; border: 5px solid white;"/>
+                    </a>
+                {% endfor %}
+                </div>
             </div>
-               <!--  <a href="/photo_gallery/{{ trip }}.html">
-                <img src="/photo_gallery/{{ trip }}.jpg" alt="{{ trip }}" title="{{ trip }}">
-                </a> -->
-            {% endfor %}
         </div>
-
         <div id="medialist">       
             <ul>
                 {% if site.email %}
