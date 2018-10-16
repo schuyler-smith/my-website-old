@@ -55,15 +55,12 @@ trips:
             {% for trip in page.trips %}
             <div class="container">
               <a href="/photo_gallery/{{ trip }}.html">
-              <img src="/photo_gallery/{{ trip }}.jpg" alt="{{ trip }}" class="image" style="width:100%">
+              <img src="/photo_gallery/{{ trip }}/cover.jpg" alt="{{ trip }}" class="image" style="width:100%">
               <div class="middle">
                 <div class="text">{{ trip }}</div>
               </div>
               </a> 
             </div>
-               <!--  <a href="/photo_gallery/{{ trip }}.html">
-                <img src="/photo_gallery/{{ trip }}.jpg" alt="{{ trip }}" title="{{ trip }}">
-                </a> -->
             {% endfor %}
         </div>
 
