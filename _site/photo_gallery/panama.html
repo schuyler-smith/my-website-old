@@ -1,34 +1,6 @@
 <!DOCTYPE html>
 <style>
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.header {
-    text-align: center;
-    padding: 32px;
-}
-.row {
-    display: -ms-flexbox; /* IE 10 */
-    display: flex;
-    -ms-flex-wrap: wrap; /* IE 10 */
-    flex-wrap: wrap;
-    padding: 0 4px;
-}
-.column {
-    -ms-flex: 50%; /* IE 10 */
-    flex: 50%;
-    padding: 0 4px;
-}
-.column img {
-    margin-top: 8px;
-    vertical-align: middle;
-
+* {box-sizing: border-box;}
 </style>
 <html>
     <head>
@@ -95,6 +67,16 @@ body {
                     
                         <a href="/photo_gallery/panama/10.jpg"><img src="/photo_gallery/panama/10.jpg.resized" alt="10.jpg"/></a>
                     
+                        <a href="/photo_gallery/panama/41.jpg"><img src="/photo_gallery/panama/41.jpg.resized" alt="41.jpg"/></a>
+                    
+                        <a href="/photo_gallery/panama/42.jpg"><img src="/photo_gallery/panama/42.jpg.resized" alt="42.jpg"/></a>
+                    
+                        <a href="/photo_gallery/panama/43.jpg"><img src="/photo_gallery/panama/43.jpg.resized" alt="43.jpg"/></a>
+                    
+                        <a href="/photo_gallery/panama/44.jpg"><img src="/photo_gallery/panama/44.jpg.resized" alt="44.jpg"/></a>
+                    
+                        <a href="/photo_gallery/panama/57.jpg"><img src="/photo_gallery/panama/57.jpg.resized" alt="57.jpg"/></a>
+                    
                 </div>
                 <div class="column">
                     
@@ -117,6 +99,16 @@ body {
                         <a href="/photo_gallery/panama/19.jpg"><img src="/photo_gallery/panama/19.jpg.resized" alt="19.jpg"/></a>
                     
                         <a href="/photo_gallery/panama/20.jpg"><img src="/photo_gallery/panama/20.jpg.resized" alt="20.jpg"/></a>
+                    
+                        <a href="/photo_gallery/panama/45.jpg"><img src="/photo_gallery/panama/45.jpg.resized" alt="45.jpg"/></a>
+                    
+                        <a href="/photo_gallery/panama/46.jpg"><img src="/photo_gallery/panama/46.jpg.resized" alt="46.jpg"/></a>
+                    
+                        <a href="/photo_gallery/panama/47.jpg"><img src="/photo_gallery/panama/47.jpg.resized" alt="47.jpg"/></a>
+                    
+                        <a href="/photo_gallery/panama/48.jpg"><img src="/photo_gallery/panama/48.jpg.resized" alt="48.jpg"/></a>
+                    
+                        <a href="/photo_gallery/panama/58.jpg"><img src="/photo_gallery/panama/58.jpg.resized" alt="58.jpg"/></a>
                     
                 </div>
                 <div class="column">
@@ -141,6 +133,14 @@ body {
                     
                         <a href="/photo_gallery/panama/30.jpg"><img src="/photo_gallery/panama/30.jpg.resized" alt="30.jpg"/></a>
                     
+                        <a href="/photo_gallery/panama/49.jpg"><img src="/photo_gallery/panama/49.jpg.resized" alt="49.jpg"/></a>
+                    
+                        <a href="/photo_gallery/panama/50.jpg"><img src="/photo_gallery/panama/50.jpg.resized" alt="50.jpg"/></a>
+                    
+                        <a href="/photo_gallery/panama/51.jpg"><img src="/photo_gallery/panama/51.jpg.resized" alt="51.jpg"/></a>
+                    
+                        <a href="/photo_gallery/panama/52.jpg"><img src="/photo_gallery/panama/52.jpg.resized" alt="52.jpg"/></a>
+                    
                 </div>
                 <div class="column">
                     
@@ -163,6 +163,14 @@ body {
                         <a href="/photo_gallery/panama/39.jpg"><img src="/photo_gallery/panama/39.jpg.resized" alt="39.jpg"/></a>
                     
                         <a href="/photo_gallery/panama/40.jpg"><img src="/photo_gallery/panama/40.jpg.resized" alt="40.jpg"/></a>
+                    
+                        <a href="/photo_gallery/panama/53.jpg"><img src="/photo_gallery/panama/53.jpg.resized" alt="53.jpg"/></a>
+                    
+                        <a href="/photo_gallery/panama/54.jpg"><img src="/photo_gallery/panama/54.jpg.resized" alt="54.jpg"/></a>
+                    
+                        <a href="/photo_gallery/panama/55.jpg"><img src="/photo_gallery/panama/55.jpg.resized" alt="55.jpg"/></a>
+                    
+                        <a href="/photo_gallery/panama/56.jpg"><img src="/photo_gallery/panama/56.jpg.resized" alt="56.jpg"/></a>
                     
                 </div>
         </div>
@@ -196,35 +204,5 @@ body {
                 
             </ul>
         </div>
-        <script>
-            $(document).ready(function() {
-                $("img").each(function() {
-                    // Calculate aspect ratio and store it in HTML data- attribute
-                    var aspectRatio = $(this).width()/$(this).height();
-                    $(this).data("aspect-ratio", aspectRatio);
-
-                    // Conditional statement
-                    if(aspectRatio > 1) {
-                        // Image is landscape
-                        $(this).css({
-                            width: "100%",
-                            height: "auto"
-                        });
-                    } else if (aspectRatio < 1) {
-                        // Image is portrait
-                        $(this).css({
-                            maxWidth: "100%"
-                        });
-                    } else {
-                        // Image is square
-                        $(this).css({
-                            maxWidth: "100%",
-                            height: "auto"
-                        });            
-                    }
-                });
-            });
-        </script>
-
 
 </body>

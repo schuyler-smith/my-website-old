@@ -5,7 +5,7 @@ trips:
   - panama
   - oaxaca
   - trinidad
-
+  - leipzig
 ---
 <!DOCTYPE html>
 <html>
@@ -51,13 +51,13 @@ trips:
             </ul>
         </div>
 
-        <div class="row" style="padding-top: 40px; "> 
+        <div class="row" style="padding-top: 40px; padding-bottom: 5%"> 
             {% for trip in page.trips %}
             <div class="container">
               <a href="/photo_gallery/{{ trip }}.html">
-              <img src="/photo_gallery/{{ trip }}/cover.jpg" alt="{{ trip }}" class="image" style="width:100%">
+              <img src="/photo_gallery/covers/{{ trip }}.jpg" alt="{{ trip }}" class="image" style="width:100%">
               <div class="middle">
-                <div class="text">{{ trip }}</div>
+                <div class="text" style="font-size: 48px;">{{ trip }}</div>
               </div>
               </a> 
             </div>

@@ -1,8 +1,91 @@
 ---
-permalink: /
-title: Schuyler - Home
+permalink: /photo_gallery/trinidad
+title: Schuyler - Trinidad Gallery
+place: Trinidad
+col1:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg
+  - 5.jpg
+  - 6.jpg
+  - 7.jpg
+  - 8.jpg
+  - 9.jpg
+  - 10.jpg
+  - 11.jpg
+  - 12.jpg
+  - 13.jpg
+  - 14.jpg
+  - 15.jpg
+  - 16.jpg
+  - 17.jpg
+  - 18.jpg
+col2:
+  - 21.jpg
+  - 22.jpg
+  - 23.jpg
+  - 24.jpg
+  - 25.jpg
+  - 26.jpg
+  - 27.jpg
+  - 28.jpg
+  - 29.jpg
+  - 30.jpg
+  - 31.jpg
+  - 32.jpg
+  - 33.jpg
+  - 34.jpg
+  - 35.jpg
+  - 36.jpg
+  - 37.jpg
+  - 38.jpg
+col3:
+  - 41.jpg
+  - 42.jpg
+  - 43.jpg
+  - 44.jpg
+  - 45.jpg
+  - 46.jpg
+  - 47.jpg
+  - 48.jpg
+  - 49.jpg
+  - 50.jpg
+  - 51.jpg
+  - 52.jpg
+  - 53.jpg
+  - 54.jpg
+  - 55.jpg
+  - 56.jpg
+  - 57.jpg
+  - 58.jpg 
+  - 59.jpg
+col4:
+  - 61.jpg
+  - 62.jpg
+  - 63.jpg
+  - 64.jpg
+  - 65.jpg
+  - 66.jpg
+  - 67.jpg
+  - 68.jpg
+  - 69.jpg
+  - 70.jpg
+  - 71.jpg
+  - 72.jpg
+  - 73.jpg
+  - 74.jpg
+  - 19.jpg
+  - 20.jpg
+  - 39.jpg
+  - 40.jpg
+
+  - 60.jpg
 ---
 <!DOCTYPE html>
+<style>
+* {box-sizing: border-box;}
+</style>
 <html>
     <head>
         <meta charset="utf-8">
@@ -12,7 +95,7 @@ title: Schuyler - Home
         <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
         <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
         {% if site.page_icon %}
-            <link rel="shortcut icon" href="{{ site.page_icon }}" />
+        <link rel="shortcut icon" href="{{ site.page_icon }}" />
         {% endif %}
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -20,11 +103,11 @@ title: Schuyler - Home
         <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
     </head>
 
-    <body class="home-page">
-        <img src="imgs/background.jpg" id="fullscreen">
+    <body class="subpage">
+        <img src="/imgs/background.jpg" id="fullscreen">
         <div id="navmenu">
             <ul>
-                <li><a class="active">Home</a></li>
+                <li><a href="/">Home</a></li>
                 {% if site.page_1 %}
                     <li><a href="/pages/{{ site.page_1 }}">{{site.page_1}}</a></li>
                 {% endif %}
@@ -42,17 +125,37 @@ title: Schuyler - Home
                 {% endif %}
                 {% if site.page_6 %}
                     <li><a href="/pages/{{ site.page_6 }}">{{site.page_6}}</a></li>
-                {% endif %}                
+                {% endif %}   
             </ul>
         </div>
-        <div class="home-content">
-            <a href="https://github.com/{{ site.github_username }}" target="_blank" >
-            <img src="{{ site.avatar }}" id="avatar">     
-            </a>    
-            <h1>{{ site.name }}</h1>
-            <a class="hidden-link" href="https://www.bcb.iastate.edu/people/schuyler-smith" target="_blank" ><h3>{{ site.description }}</h3></a>
+
+        <div class="header" >
+          <h1 style="margin-top: 1%">{{ page.place }}</h1>
         </div>
-        <div id="medialist">
+        <div class="row" style="margin-bottom: 10%"> 
+                <div class="column">
+                    {% for pic in page.col1 %}
+                        <a href="{{ page.permalink }}/{{ pic }}"><img src="{{ page.permalink }}/{{ pic }}.resized" alt="{{ pic }}"/></a>
+                    {% endfor %}
+                </div>
+                <div class="column">
+                    {% for pic in page.col2 %}
+                        <a href="{{ page.permalink }}/{{ pic }}"><img src="{{ page.permalink }}/{{ pic }}.resized" alt="{{ pic }}"/></a>
+                    {% endfor %}
+                </div>
+                <div class="column">
+                    {% for pic in page.col3 %}
+                        <a href="{{ page.permalink }}/{{ pic }}"><img src="{{ page.permalink }}/{{ pic }}.resized" alt="{{ pic }}"/></a>
+                    {% endfor %}
+                </div>
+                <div class="column">
+                    {% for pic in page.col4 %}
+                        <a href="{{ page.permalink }}/{{ pic }}"><img src="{{ page.permalink }}/{{ pic }}.resized" alt="{{ pic }}"/></a>
+                    {% endfor %}
+                </div>
+        </div>
+
+        <div id="medialist">       
             <ul>
                 {% if site.email %}
                 <li><a class="fa fa-2x fa-envelope" href="mailto:{{ site.email }}" target="_blank"><span class="description" >E-mail</span></a></li>
@@ -87,5 +190,5 @@ title: Schuyler - Home
                 {% endif %}
             </ul>
         </div>
-    </body>
-</html>
+
+</body>
