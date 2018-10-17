@@ -2,8 +2,8 @@
 permalink: /pages/photos/
 title: Schuyler - Photos
 trips:
-  - panama
   - oaxaca
+  - panama
   - trinidad
   - leipzig
 ---
@@ -51,7 +51,11 @@ trips:
             </ul>
         </div>
 
-        <div class="row" style="padding-top: 40px; padding-bottom: 5%"> 
+<!--         <div class="container" style="padding-top: 4%; left: 25%;"> 
+              <img src="/photo_gallery/travel_map.PNG" alt="map" class="image" style="width:100%">
+        </div> -->
+
+        <div class="row" style="padding-top: 5%; padding-bottom: 5%;"> 
             {% for trip in page.trips %}
             <div class="container">
               <a href="/photo_gallery/{{ trip }}.html">
