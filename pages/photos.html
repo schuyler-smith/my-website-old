@@ -6,6 +6,9 @@ trips:
   - panama
   - trinidad
   - leipzig
+  - dresden
+  - prague
+  - vienna
 ---
 <!DOCTYPE html>
 <html>
@@ -55,7 +58,7 @@ trips:
               <img src="/photo_gallery/travel_map.PNG" alt="map" class="image" style="width:100%">
         </div> -->
 
-        <div class="row" style="padding-top: 5%; padding-bottom: 5%;"> 
+        <div class="row" style="padding-top: 5%; padding-bottom: 10%;"> 
             {% for trip in page.trips %}
             <div class="container">
               <a href="/photo_gallery/{{ trip }}.html">
