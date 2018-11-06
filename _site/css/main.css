@@ -277,11 +277,11 @@ a {
 
 @media (max-width: 450px) {
 #avatar {
-    height: 250px;
+    height: 150px;
     border-radius: 100%;
     border: 5px solid white;
     margin-bottom: 40px;
-    margin-top: 20px;
+    margin-top: -10px;
 }
 .home-page {
     font-family: 'Open Sans',Helvetica,Arial,sans-serif;
@@ -312,7 +312,7 @@ h1 {
     text-decoration: none;
     padding-top: 10px;
     padding-bottom: -10px;
-    margin-top: -10px;
+    margin-top: -40px;
 }
 h3 {
     color: white;
@@ -357,7 +357,6 @@ h3 {
    float: middle;
    width: 100%;
    background-color: rgba(0, 0, 0, 0);
-   border-top: 2px solid #000;
    overflow: hidden;
    position: absolute;
 }
@@ -369,7 +368,8 @@ h3 {
    margin-top: -2px;
    padding: 0;
    position: fixed;
-   left: 15%;
+   left: 14.5%;
+   width: 80%;
    text-align: center;
    background-color: rgba(0, 0, 0, 0);
 }
@@ -382,6 +382,7 @@ h3 {
    position: relative;
    right: 15px;
    background-color: #333;
+   width: 33.0%;
 }
 #navmenu a {
    display:block;
@@ -392,6 +393,7 @@ h3 {
    text-decoration: none;
    line-height: 1.3em;
    text-transform: capitalize;
+
 }
 #navmenu a:hover {
    background:#369;
