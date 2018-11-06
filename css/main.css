@@ -270,11 +270,10 @@ a {
 
 
 
-
-
-
-
-
+/**/
+/**/
+/*chrome on my phone is 360x550px*/
+/**/
 @media (max-width: 450px) {
 #avatar {
     height: 150px;
