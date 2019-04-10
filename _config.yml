@@ -7,13 +7,13 @@ page_icon: "/imgs/icon.png"
 name: Schuyler D. Smith
 description: Ph.D. Student - Bioinformatics and Computational Biology
 
+#media list items
+email: sdsmith@iastate.edu
+cv: https://schuyler-smith.github.io/pages/Smith_Schuyler_CV.pdf
+google_scholar: https://scholar.google.com/citations?user=fTKo_RgAAAAJ&hl=en&oi=sra
+orcid_id: 0000-0001-5720-5611
 github_username:  schuyler-smith
 instagram_username:  schuylerds
-email: sdsmith@iastate.edu
-google_scholar: https://scholar.google.com/citations?user=fTKo_RgAAAAJ&hl=en&oi=sra
-cv: https://schuyler-smith.github.io/pages/Smith_Schuyler_CV.pdf
-#twitter_username: 
-#steam_username: 
 
 #navigation bar links
 page_1: about
@@ -22,5 +22,4 @@ page_3: phylosmith
 page_4: 
 page_5: 
 page_6: photos
-
 
