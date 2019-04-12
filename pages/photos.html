@@ -29,7 +29,6 @@ trips:
 
     <body class="subpage">
         <img src="/imgs/background.jpg" id="fullscreen">
-        
         <div id="navmenu">
             <ul>
                 {% for link in site.data.pages %}
@@ -43,27 +42,28 @@ trips:
             </ul>
         </div>
 
+        <div class="content">
 <!--         <div class="container" style="padding-top: 4%; left: 25%;"> 
               <img src="/photo_gallery/travel_map.PNG" alt="map" class="image" style="width:100%">
         </div> -->
-
-        <div class="row" style="padding-top: 5%; padding-bottom: 10%;"> 
+        <div class="row" style="padding-top: 15px; padding-bottom: -20%;"> 
             {% for trip in page.trips %}
             <div class="container">
               <a href="/photo_gallery/{{ trip }}.html">
               <img src="/photo_gallery/covers/{{ trip }}.jpg" alt="{{ trip }}" class="image" style="width:100%">
               <div class="middle">
-                <div class="text" style="font-size: 48px;">{{ trip }}</div>
+                <div class="photo_text">{{ trip }}</div>
               </div>
               </a> 
             </div>
             {% endfor %}
         </div>
+        </div>
 
         <div id="medialist-page">       
             <ul>
                 {% for link in site.data.media %}
-                    <li><a class="{{ link.icon }}" href="{{ link.url }}" target="_blank" ><span class="description">{{ link.title }}</span></a></li>
+                    <li><a class="{{ link.icon }}" href="{{ link.url }}" target="_blank" ><span class="description-page">{{ link.title }}</span></a></li>
                 {% endfor %}
             </ul>
         </div>
