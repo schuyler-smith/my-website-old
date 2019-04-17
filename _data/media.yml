@@ -1,8 +1,7 @@
 
-
-- title: E-mail
-  url: mailto:sdsmith@iastate.edu
-  icon: fa fa-2x fa-envelope"
+- title: Github
+  url: https://github.com/schuyler-smith
+  icon: fa fa-2x fa-github
 
 - title: Google Scholar
   url: https://scholar.google.com/citations?user=fTKo_RgAAAAJ&hl=en&oi=sra
@@ -12,9 +11,9 @@
   url: https://orcid.org/0000-0001-5720-5611
   icon: ai ai-2x ai-orcid
 
-- title: Github
-  url: https://github.com/schuyler-smith
-  icon: fa fa-2x fa-github
+- title: CV
+  url: https://schuyler-smith.github.io/pages/Smith_Schuyler_CV.pdf
+  icon: ai ai-2x ai-cv
 
 - title: Twitter
   url: https://twitter.com/scischuy
@@ -24,7 +23,7 @@
   url: https://instagram.com/schuylerds
   icon: fa fa-2x fa-instagram
 
-- title: CV
-  url: https://schuyler-smith.github.io/pages/Smith_Schuyler_CV.pdf
-  icon: ai ai-2x ai-cv
+- title: E-mail
+  url: mailto:sdsmith@iastate.edu
+  icon: fa fa-2x fa-envelope"
 
