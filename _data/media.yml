@@ -19,9 +19,9 @@
   url: https://twitter.com/scischuy
   icon: fa fa-2x fa-twitter
 
-- title: Instagram
-  url: https://instagram.com/schuylerds
-  icon: fa fa-2x fa-instagram
+# - title: Instagram
+#   url: https://instagram.com/schuylerds
+#   icon: fa fa-2x fa-instagram
 
 - title: E-mail
   url: mailto:sdsmith@iastate.edu

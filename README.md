@@ -1,5 +1,5 @@
 # My Personal Webpage
 
-## Check it out
+[Schuyler Smith](http://schuyler-smith.github.io/) 
 
-It's still pretty new, and I have a bit of work to do on it!
+A slow work in progress, but it is mostly functional.
