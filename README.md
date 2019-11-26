@@ -5,6 +5,8 @@
 A slow work in progress, but it is mostly functional.
 
 <!-- 
+
+
 a=1
 for i in *.jpg; do
   new=$(printf "%d.jpg" "$a")
@@ -15,4 +17,9 @@ done
 for i in *.jpg; do
   convert  -resize 20% $i resized_$i
 done 
+
+convert -resize 18% cover cover
+
+
+
 -->
