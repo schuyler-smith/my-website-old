@@ -26,7 +26,6 @@ trips:
         <link rel="stylesheet" href="/css/academicons/css/academicons.min.css"/>
         <link rel="stylesheet" href="{{ site.baseurl }}{{ '/css/main.css' }}">
     </head>
-
     <body class="subpage">
         <img src="/imgs/background.jpg" id="fullscreen">
         <div id="navmenu">
@@ -41,12 +40,13 @@ trips:
                 {% endfor %}
             </ul>
         </div>
+<!--         -->
 
         <div class="content">
 <!--         <div class="container" style="padding-top: 4%; left: 25%;"> 
               <img src="/photo_gallery/travel_map.PNG" alt="map" class="image" style="width:100%">
         </div> -->
-        <div class="row" style="padding-top: 15px; padding-bottom: -20%;"> 
+        <div class="row"> 
             {% for trip in page.trips %}
             <div class="container">
               <a href="/photo_gallery/{{ trip }}.html">
@@ -60,6 +60,7 @@ trips:
         </div>
         </div>
 
+<!--         -->
         <div id="medialist-page">       
             <ul>
                 {% for link in site.data.media %}
