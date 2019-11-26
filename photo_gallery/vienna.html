@@ -70,7 +70,6 @@ col4:
         <link rel="stylesheet" href="/css/academicons/css/academicons.min.css"/>
         <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
     </head>
-
     <body class="subpage">
         <img src="/imgs/background.jpg" id="fullscreen">
         <div id="navmenu">
@@ -85,9 +84,10 @@ col4:
                 {% endfor %}
             </ul>
         </div>
+<!--  -->
 
         <div class="header" >
-          <h1 style="margin-top: 1%">{{ page.place }}</h1>
+          <h2>{{ page.place }}</h2>
         </div>
         <div class="row" style="margin-bottom: 10%"> 
                 <div class="column">
@@ -112,6 +112,7 @@ col4:
                 </div>
         </div>
 
+<!--  -->
         <div id="medialist-page">       
             <ul>
                 {% for link in site.data.media %}
