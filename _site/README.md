@@ -2,7 +2,7 @@
 
 [Schuyler Smith](http://schuyler-smith.github.io/) 
 
-A slow work in progress, but it is mostly functional.
+A slow work in progress, but it is functional.
 
 <!-- 
 
