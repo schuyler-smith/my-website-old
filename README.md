@@ -15,7 +15,7 @@ for i in *.jpg; do
 done
 
 for i in *.jpg; do
-  convert  -resize 20% $i resized_$i
+  convert  -resize 14% $i resized_$i
 done 
 
 convert -resize 18% cover cover
