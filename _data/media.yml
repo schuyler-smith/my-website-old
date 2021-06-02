@@ -12,7 +12,7 @@
   icon: ai ai-2x ai-orcid
 
 - title: CV
-  url: https://schuyler-smith.github.io/CV/Smith_Schuyler_CV.pdf
+  url: /pages/Smith_Schuyler_CV.pdf
   icon: ai ai-2x ai-cv
 
 - title: Twitter

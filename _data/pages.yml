@@ -1,15 +1,20 @@
-
-
 - title: Home
   url: /
 
 - title: About
   url: /pages/about
 
-- title: Photos
-  url: /pages/photos
+- title: CV
+  url: /pages/Smith_Schuyler_CV.pdf
 
 - title: phylosmith
   url: https://schuyler-smith.github.io/phylosmith/
 
-  
+- title: DARTE-QM
+  url: https://schuyler-smith.github.io/DARTE-QM/
+
+- title: HABs
+  url: https://schuyler-smith.github.io/IA_Lake_Microcystin/
+
+- title: Travels
+  url: /pages/photos
