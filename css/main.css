@@ -133,11 +133,14 @@ h1 {
     font-size: 4em;
     font-family: 'Open Sans';
     margin: -10px auto;
-    background-color: rgba(0, 0, 0, 0.35);
     padding-top: 20px;
     padding-bottom: 10px;
     width: 65%;
     text-decoration: none;
+}
+h1 span{
+    /*background-color: rgba(0, 0, 0, 0.35);*/
+    padding: 0 20px;
 }
 h2 {
     color: white;
@@ -157,10 +160,13 @@ h3 {
     color: white;
     padding-bottom: 20px;
     font-weight: thin;
-    background-color: rgba(0, 0, 0, 0.35);
     margin: 10px auto;
     width: 65%;
     text-decoration: none;
+}
+h3 span{
+    /*background-color: rgba(0, 0, 0, 0.35);*/
+    padding: 10px 20px;
 }
 a {
   text-decoration: none;
@@ -320,7 +326,7 @@ a {
     color: white;
     font-weight: bold;
     letter-spacing: 0.05em;
-    font-size: 3.5em;
+    font-size: 3.2em;
     font-family: 'Serif';
     margin: 10px auto;
     margin-bottom: 30px;
@@ -330,7 +336,7 @@ a {
 #pubs h4 span{
     background-color: rgba(0, 0, 0, 0.8);
     padding: 0 15px;
-  }
+}
 #pubs ul, ol{
     /*margin: 0;padding: 0;*/
     list-style: none;
@@ -369,7 +375,41 @@ a {
     background-color: #21282B;
 }
 
-
+#sw ul, ol{
+    /*margin: 0;padding: 0;*/
+    list-style: none;
+}
+#sw li {
+    background: #0056A7;
+    color: #fff;
+    counter-increment: myCounter;
+    margin: 0 0 30px 0;
+    padding: 13px;
+    position: relative;
+    top: 1em;
+    border-radius: 0em 2px 1em 1em;
+    padding-left: 2em;
+    font-size: 1.2em;
+    font-family: Constantia;
+}
+#sw li:before{
+    content: counter(myCounter, decimal-leading-zero);
+    display: inline-block;
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 1.3em;
+    background-color: #0056A7;
+    padding: 10px;
+    font-weight: bold;
+    position: absolute; 
+    top: 0;
+    left: -30px;
+    border-radius: 50%;
+    font-family: exo;
+}
+#sw li:nth-child(even){
+    background-color: #21282B;
+}
 
 
 

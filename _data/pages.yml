@@ -7,20 +7,20 @@
 - title: Publications
   url: /pages/publications
 
-# - title: Projects
-#   url: /pages/publications
+- title: Projects
+  url: /pages/projects
 
-# - title: Software
-#   url: /pages/publications
+- title: Software
+  url: /pages/software
 
-- title: phylosmith
-  url: https://schuyler-smith.github.io/phylosmith/
+# - title: phylosmith
+#   url: https://schuyler-smith.github.io/phylosmith/
 
-- title: DARTE-QM
-  url: https://schuyler-smith.github.io/DARTE-QM/
+# - title: DARTE-QM
+#   url: https://schuyler-smith.github.io/DARTE-QM/
 
-- title: HABs
-  url: https://schuyler-smith.github.io/IA_Lake_Microcystin/
+# - title: HABs
+#   url: https://schuyler-smith.github.io/IA_Lake_Microcystin/
 
 - title: Travels
   url: /pages/photos

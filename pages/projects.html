@@ -1,0 +1,87 @@
+---
+permalink: /pages/projects
+title: Schuyler - Projects
+---
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="{{ site.data.config.description }}">
+        <title>{% if page.title %}{{ page.title }}{% else %}{{ site.data.config.title }}{% endif %}</title>
+        <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+        {% if site.data.config.page_icon %}<link rel="shortcut icon" href="{{ site.data.config.page_icon }}" />{% endif %}
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/css/academicons/css/academicons.min.css"/>
+        <link rel="stylesheet" href="{{ site.baseurl }}{{ '/css/main.css' }}">
+    </head>
+    <body class="subpage">
+        <img src="/pages/background.jpg" id="background">
+
+        <div id="navmenu">
+            <ul>
+                {% for link in site.data.pages %}
+                    {% assign class = nil %}
+                    {% if page.url == link.url %}
+                        <li><a class="active">{{ link.title }}</a></li>
+                    {% else %}
+                        <li><a href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+
+<!--         -->
+
+        <div class="publications" >
+        <div id="sw">
+        <br>
+            <ul>
+                <li><font size="+2"><b><a href="https://schuyler-smith.github.io/DARTE-QM/" target="_blank">DARTE-QM</a></b></font><br><br>
+                <img src="https://schuyler-smith.github.io/DARTE-QM/metagenome_comparison_files/figure-html/target_profile-1.png" 
+                style="
+                max-width: 50%;
+                max-height: 100vh;
+                margin: auto;">
+                <img src="https://schuyler-smith.github.io/DARTE-QM/sample_analysis_files/figure-html/pca_normalized-1.png" 
+                style="
+                max-width: 50%;
+                max-height: 22.5vh;
+                margin: auto;">
+                </li>
+                <!--  -->
+                <!--  -->
+                <li><font size="+2"><b><a href="https://schuyler-smith.github.io/IA_Lake_Microcystin/" target="_blank">HABs</a></b></font><br><br>
+                <font size="-1">
+                </font>
+                <img src="https://schuyler-smith.github.io/IA_Lake_Microcystin/index_files/figure-html/map-1.png" 
+                style="
+                max-width: 50%;
+                max-height: 30vh;
+                margin: auto;">
+                <img src="https://schuyler-smith.github.io/IA_Lake_Microcystin/molecular_files/figure-html/pH_correlation-1.png" 
+                style="
+                max-width: 50%;
+                max-height: 30vh;
+                margin: auto;">
+                </li>
+                </li>
+                <!--  -->
+                <!--  -->
+            </ul>
+        </div>
+        </div>
+
+<!--         -->
+
+        <div id="medialist-page">       
+            <ul>
+                {% for link in site.data.media %}
+                    <li><a class="{{ link.icon }}" href="{{ link.url }}" target="_blank" ><span class="description-page">{{ link.title }}</span></a></li>
+                {% endfor %}
+            </ul>
+        </div>
+</body>
+</html>
