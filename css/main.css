@@ -109,7 +109,7 @@
   opacity: 1;
 }
 .photo_text {
-  background-color: #4CAF50;
+  background-color: #0056A7;
   color: white;
   padding: 16px 32px;
   text-transform: capitalize;
@@ -167,7 +167,7 @@ a {
   color: MediumTurquoise
 }
 
-#fullscreen {
+#background {
     z-index: -999;
     min-height: 100%;
     min-width: 1024px;
@@ -199,8 +199,6 @@ a {
    background:#ddd;
    color:#000;
    text-decoration: none;
-   line-height: 1.3em;
-   text-transform: capitalize;
    font-weight:bold;
 }
 #navmenu a:hover {
@@ -318,20 +316,21 @@ a {
     margin-right: 25%; 
     text-align: left;
 }
-#pubs h2{
+#pubs h4{
     color: white;
     font-weight: bold;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.05em;
     font-size: 3.5em;
     font-family: 'Serif';
     margin: 10px auto;
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 1px;
-    margin-bottom: 3%;
-    width: 55%;
+    margin-bottom: 30px;
     text-decoration: none;
     text-align: center;
 }
+#pubs h4 span{
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 0 15px;
+  }
 #pubs ul, ol{
     /*margin: 0;padding: 0;*/
     list-style: none;
@@ -345,7 +344,7 @@ a {
     padding: 13px;
     position: relative;
     top: 1em;
-    border-radius:  0em 2px 1em 1em;
+    border-radius: 0em 2px 1em 1em;
     padding-left: 2em;
     font-size: 1.2em;
     font-family: Constantia;
@@ -355,14 +354,14 @@ a {
     content: counter(myCounter, decimal-leading-zero);
     display: inline-block;
     text-align: center;
-    font-size: 2em;
+    font-size: 1.5em;
     line-height: 1.3em;
-    background-color:  #0056A7;
+    background-color: #0056A7;
     padding: 10px;
     font-weight: bold;
     position: absolute; 
     top: 0;
-    left: -40px;
+    left: -30px;
     border-radius: 50%;
     font-family: exo;
 }
