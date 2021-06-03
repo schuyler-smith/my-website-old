@@ -3,9 +3,9 @@
 
 - title: About
   url: /pages/about
-
-- title: CV
-  url: /pages/Smith_Schuyler_CV.pdf
+  
+- title: Publications
+  url: /pages/publications
 
 - title: phylosmith
   url: https://schuyler-smith.github.io/phylosmith/

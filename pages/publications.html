@@ -1,0 +1,87 @@
+---
+permalink: /pages/publications
+title: Schuyler - Publications
+---
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="{{ site.data.config.description }}">
+        <title>{% if page.title %}{{ page.title }}{% else %}{{ site.data.config.title }}{% endif %}</title>
+        <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+        {% if site.data.config.page_icon %}<link rel="shortcut icon" href="{{ site.data.config.page_icon }}" />{% endif %}
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/css/academicons/css/academicons.min.css"/>
+        <link rel="stylesheet" href="{{ site.baseurl }}{{ '/css/main.css' }}">
+    </head>
+    <body class="subpage">
+        <img src="/pages/background.jpg" id="fullscreen">
+
+        <div id="navmenu">
+            <ul>
+                {% for link in site.data.pages %}
+                    {% assign class = nil %}
+                    {% if page.url == link.url %}
+                        <li><a class="active">{{ link.title }}</a></li>
+                    {% else %}
+                        <li><a href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+
+<!--         -->
+
+        <div class="publications" >
+        <div id="pubs">
+        <!-- http://www.html-color-names.com/color-chart.php -->
+        <!-- #C8102E Cardinal -->
+        <!-- #F1BE48 Gold -->
+        <br>
+        <h2>Articles</h2>
+            <ul>
+                <li><b>Schuyler D. Smith</b>, Heffner, E., Murray, S.C. <a href="https://www.cabdirect.org/cabdirect/abstract/20173230929" target="_blank"><i>Molecular analysis of genetic diversity in a Texas maize breeding program</i></a>. Maydica. cabdirect.org/abstract/201, 2015.
+                
+                <li>Choi, J., Rieke, E.L., Moorman, T.B., Soupir, M.L., Allen, H.K., <b>Smith, S.D.</b>, Howe, A. <a href="https://academic.oup.com/femsec/article/94/4/fiy006/4810543" target="_blank"><i>Practical implications of erythromycin resistance gene diversity on surveillance and monitoring of resistance</i></a>. FEMS microbiology ecology. 10.1093/femsec/fiy006, January, 2018.</li>
+                
+                <li><b>Schuyler D. Smith</b><a href="https://www.theoj.org/joss-papers/joss.01442/10.21105.joss.01442.pdf" target="_blank"><i>phylosmith: an R-package for reproducible and efficient microbiome analysis with phyloseq-objects</i></a>. Journal of Open Source Software. 10.21105/joss.01442, June, 2019.</li>
+
+                <li><b>Schuyler D. Smith</b>, Colgan, P., Yang, F., Rieke, E.L., Soupir, M.L., Moorman, T.B., Allen, H.K., Howe, A. <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0222470" target="_blank"><i>Investigating the dispersal of antibiotic resistance associated genes from manure application to soil and drainage waters in simulated agricultural farmland systems</i></a>. PLOS One. journal.pone.0222470, September, 2019.</li>
+
+                <li>Yu, W., Lawrence, N. C., Sooksa-nguan, T., <b>Smith, S.D.</b>, Tenesaca, C., Howe, A. C., Hall, S. J. <a href="https://www.sciencedirect.com/science/article/pii/S0038071721001000?casa_token=t9t8cAbqm6kAAAAA:-o3ou_9A5NuT0vWFOU4_on5AxDyt62tWqvevq0N8eTJXAZzxVJq_-dZxADkC1rZ-pDIQ54V5fA" target="_blank"><i>Microbial linkages to soil biogeochemical processes in a poorly drained agricultural ecosystem</i></a>. Soil Biology and Biochemistry, 108228. March, 2021.</li>
+
+                <li><b>Schuyler D. Smith</b>, Choi, J., Howe, A. <i>Diversity of Antibiotic Resistance genes and Transfer Elements-Quantitative Monitoring (DARTE-QM): a method for sequencing microbiome functional profiles</i>. Preparing submission. 2021.</li>
+            </ul>
+        <h2>Posters</h2>
+            <ul>
+
+                <li><b>Smith, S.D.</b>, Endelman, J.B. <a href="https://www.slideshare.net/sdsmith1390/schuyler-icqg-poster2016" target="_blank"><i>Genotyping by Sequencing for Autotetraploid Species</i></a>. Presented at the 5th International Conference on Quantitative Genetics. 2016, June 12-17. Madison, Wisconsin. & the 11th Annual National Association of Plant Breeders Meeting. 2016, August 15-18. Raleigh, North Carolina.</li>
+                
+                <li><b>Smith, S.D.</b>, Howe, A. <a href="https://www.slideshare.net/sdsmith1390/ss-p3-researchposter2017" target="_blank"><i>Examining Antibiotic Resistance Gene (ARG) horizontal transfer and introduction through farmland soil microbiomes as a result of modern farming practices</i></a>. Presented at the 3rd Annual Front Rang Computational & Systems Biology Symposium: Microbiome. 2017, June 12-13. Fort Collins, Colorado.
+
+                <li><b>Smith, S.D.</b>, Villanueva, P.E., Fukami, T., Howe, A. <a href="https://www.slideshare.net/sdsmith1390/isme-2018-113405042" target="_blank"><i>Co-Occurrence Networks Reveal Key OTUs in Flower Nectar Microbiomes Across Dispersal Treatments</i></a>. Presented at the 17th ISME. 2018, August 12-17. Leipzig, Germany & the NSF Research Traineeship (NRT) Annual Meeting. 2018, September 27-28. Arlington, Virginia.</li>
+
+                <li><b>Smith, S.D.</b><a href="https://www.slideshare.net/sdsmith1390/phylosmith" target="_blank"><i>phylosmith: an R-package for reproducible and efficient microbiome analysis with phyloseq-objects</i></a>. Presented at the 27th ISMB/18th ECCB. 2019, July 21-25. Basel, Switzerland.</li>
+
+            </ul>
+        <h2>Dissertations</h2>
+            <ul>
+                <li><b>Schuyler D. Smith</b> <i>Molecular Characterization of the Texas Maize Breeding Program</i>. (M.S. Thesis). Texas A&M University, College Station, Texas, 2015</li>
+            </ul>
+        </div>
+        </div>
+
+<!--         -->
+
+        <div id="medialist-page">       
+            <ul>
+                {% for link in site.data.media %}
+                    <li><a class="{{ link.icon }}" href="{{ link.url }}" target="_blank" ><span class="description-page">{{ link.title }}</span></a></li>
+                {% endfor %}
+            </ul>
+        </div>
+</body>
+</html>

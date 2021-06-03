@@ -8,17 +8,17 @@ title: Schuyler - Home
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="{{ site.description }}">
-        <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+        <meta name="description" content="{{ site.data.config.description }}">
+        <title>{% if page.title %}{{ page.title }}{% else %}{{ site.data.config.title }}{% endif %}</title>
         <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-        {% if site.page_icon %}<link rel="shortcut icon" href="{{ site.page_icon }}" />{% endif %}
+        {% if site.data.config.page_icon %}<link rel="shortcut icon" href="{{ site.data.config.page_icon }}" />{% endif %}
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="/css/academicons/css/academicons.min.css"/>
         <link rel="stylesheet" href="{{ site.baseurl }}{{ '/css/main.css' }}">
     </head>
     <body class="home-page">
-        <img src="/imgs/background.jpg" id="fullscreen">
+        <img src="/pages/background.jpg" id="fullscreen">
         <div id="navmenu">
             <ul>
                 {% for link in site.data.pages %}
@@ -31,17 +31,19 @@ title: Schuyler - Home
                 {% endfor %}
             </ul>
         </div>
+
 <!--         -->
 
         <div class="home-content">
             <a href="https://github.com/Schuyler-Smith" target="_blank" >
-            <img src="{{ site.avatar }}" id="avatar">     
+            <img src="{{ site.data.config.avatar }}" id="avatar">     
             </a>    
-            <h1>{{ site.name }}</h1>
-            <a class="hidden-link" href="https://www.bcb.iastate.edu/people/schuyler-smith" target="_blank" ><h3>{{ site.description }}</h3></a>
+            <h1>{{ site.data.config.name }}</h1>
+            <a class="hidden-link" href="https://www.bcb.iastate.edu/people/schuyler-smith" target="_blank" ><h3>{{ site.data.config.description }}</h3></a>
         </div>
 
 <!--         -->
+
         <div id="medialist">
             <ul>
                 {% for link in site.data.media %}

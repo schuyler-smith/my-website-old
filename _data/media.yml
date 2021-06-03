@@ -3,6 +3,10 @@
   url: https://github.com/schuyler-smith
   icon: fa fa-2x fa-github
 
+- title: CV
+  url: /pages/Smith_Schuyler_CV.pdf
+  icon: ai ai-2x ai-cv
+
 - title: Scholar
   url: https://scholar.google.com/citations?user=fTKo_RgAAAAJ&hl=en&oi=sra
   icon: ai ai-2x ai-google-scholar
@@ -10,10 +14,6 @@
 - title: Orcid
   url: https://orcid.org/0000-0001-5720-5611
   icon: ai ai-2x ai-orcid
-
-- title: CV
-  url: /pages/Smith_Schuyler_CV.pdf
-  icon: ai ai-2x ai-cv
 
 - title: Twitter
   url: https://twitter.com/scischuy
