@@ -13,6 +13,9 @@
 - title: Software
   url: /pages/software
 
+- title: CV
+  url: /pages/CV
+
 # - title: phylosmith
 #   url: https://schuyler-smith.github.io/phylosmith/
 
@@ -22,5 +25,5 @@
 # - title: HABs
 #   url: https://schuyler-smith.github.io/IA_Lake_Microcystin/
 
-- title: Travels
+- title: Photos
   url: /pages/photos

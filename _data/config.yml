@@ -1,8 +1,14 @@
 # Site settings
 title: Schuyler
+page_icon: https://github.com/schuyler-smith.png
+
+background: /photo_gallery/morocco/43.jpg
 
 avatar: https://github.com/schuyler-smith.png
-page_icon: https://github.com/schuyler-smith.png
+avatar_url: https://github.com/Schuyler-Smith
 
 name: Schuyler D. Smith
 description: Ph.D. Candidate - Bioinformatics and Computational Biology
+description_url: https://www.bcb.iastate.edu/people/schuyler-smith
+
+cv: https://github.com/schuyler-smith/CV/raw/master/Smith_Schuyler_CV.pdf

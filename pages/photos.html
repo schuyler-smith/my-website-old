@@ -22,17 +22,24 @@ trips:
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="{{ site.data.config.description }}">
+        <!-- PAGE TITLE -->
         <title>{% if page.title %}{{ page.title }}{% else %}{{ site.data.config.title }}{% endif %}</title>
         <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+        <!-- PAGE ICON -->
         {% if site.data.config.page_icon %}<link rel="shortcut icon" href="{{ site.data.config.page_icon }}" />{% endif %}
+        <!-- LOAD OPEN SANS FONT -->
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin' rel='stylesheet' type='text/css'>
+        <!-- LOAD FONTAWESOME ICONS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <!-- LOAD ACADEMIC FONTAWESOME STYLE ICONS -->
         <link rel="stylesheet" href="/css/academicons/css/academicons.min.css"/>
+        <!-- LOAD LOCAL CSS -->
         <link rel="stylesheet" href="{{ site.baseurl }}{{ '/css/main.css' }}">
     </head>
-    <body class="subpage">
-        <img src="/pages/background.jpg" id="background">
+    <body class="home-page">
+        <!-- BACKGROUND IMAGE -->
+        <img src="{{ site.data.config.background }}" id="background">
+        <!-- NAVIGATION BAR -->
         <div id="navmenu">
             <ul>
                 {% for link in site.data.pages %}
@@ -45,12 +52,11 @@ trips:
                 {% endfor %}
             </ul>
         </div>
-<!--         -->
+        <!-- END NAVIGATION BAR -->
+
+<!--    PAGE     -->
 
         <div class="content">
-<!--         <div class="container" style="padding-top: 4%; left: 25%;"> 
-              <img src="/photo_gallery/travel_map.PNG" alt="map" class="image" style="width:100%">
-        </div> -->
         <div class="row"> 
             {% for trip in page.trips %}
             <div class="container">
@@ -66,14 +72,14 @@ trips:
         </div>
 
 <!--         -->
-        <div id="medialist-page">       
+
+        <!-- MEDIA LIST -->
+        <div id="medialist">
             <ul>
                 {% for link in site.data.media %}
-                    <li><a class="{{ link.icon }}" href="{{ link.url }}" target="_blank" ><span class="description-page">{{ link.title }}</span></a></li>
+                    <li><a class="{{ link.icon }}" href="{{ link.url }}" target="_blank" ><span class="description">{{ link.title }}</span></a></li>
                 {% endfor %}
             </ul>
         </div>
-
-
-
+        <!-- END MEDIA LIST -->
 </body>
