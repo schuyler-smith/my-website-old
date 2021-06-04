@@ -1,20 +1,6 @@
 ---
 permalink: /pages/photos
 title: Schuyler - Photos
-trips:
-  - oaxaca
-  - panama
-  - trinidad
-  - bavaria
-  - prague
-  - vienna
-  - morocco
-  - scotland
-  - london
-  - strasbourg
-  - rome
-  - amsterdam
-  - antioquia
 ---
 <!DOCTYPE html>
 <html>
@@ -42,7 +28,7 @@ trips:
         <!-- NAVIGATION BAR -->
         <div id="navmenu">
             <ul>
-                {% for link in site.data.pages %}
+                {% for link in site.data.config.pages %}
                     {% assign class = nil %}
                     {% if page.url == link.url %}
                         <li><a class="active">{{ link.title }}</a></li>
@@ -58,7 +44,7 @@ trips:
 
         <div class="content">
         <div class="row"> 
-            {% for trip in page.trips %}
+            {% for trip in site.data.config.trips %}
             <div class="container">
               <a href="/photo_gallery/{{ trip }}.html">
               <img src="/photo_gallery/covers/{{ trip }}.jpg" alt="{{ trip }}" class="image" style="width:100%">

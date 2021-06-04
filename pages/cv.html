@@ -27,7 +27,7 @@ title: Schuyler - CV
         <!-- NAVIGATION BAR -->
         <div id="navmenu">
             <ul>
-                {% for link in site.data.pages %}
+                {% for link in site.data.config.pages %}
                     {% assign class = nil %}
                     {% if page.url == link.url %}
                         <li><a class="active">{{ link.title }}</a></li>

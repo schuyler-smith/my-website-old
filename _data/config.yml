@@ -12,3 +12,35 @@ description: Ph.D. Candidate - Bioinformatics and Computational Biology
 description_url: https://www.bcb.iastate.edu/people/schuyler-smith
 
 cv: https://github.com/schuyler-smith/CV/raw/master/Smith_Schuyler_CV.pdf
+
+pages:
+  - title: Home
+    url: /
+  - title: About
+    url: /pages/about
+  - title: Publications
+    url: /pages/publications
+  - title: Projects
+    url: /pages/projects
+  - title: Software
+    url: /pages/software
+  - title: CV
+    url: /pages/CV
+  - title: Photos
+    url: /pages/photos
+
+
+trips:
+  - oaxaca
+  - panama
+  - trinidad
+  - bavaria
+  - prague
+  - vienna
+  - morocco
+  - scotland
+  - london
+  - strasbourg
+  - rome
+  - amsterdam
+  - antioquia
