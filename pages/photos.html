@@ -22,7 +22,7 @@ title: Schuyler - Photos
         <!-- LOAD LOCAL CSS -->
         <link rel="stylesheet" href="{{ site.baseurl }}{{ '/css/main.css' }}">
     </head>
-    <body class="home-page">
+    <body class="subpage">
         <!-- BACKGROUND IMAGE -->
         <img src="{{ site.data.config.background }}" id="background">
         <!-- NAVIGATION BAR -->
@@ -60,7 +60,7 @@ title: Schuyler - Photos
 <!--         -->
 
         <!-- MEDIA LIST -->
-        <div id="medialist">
+        <div id="medialist-page">
             <ul>
                 {% for link in site.data.media %}
                     <li><a class="{{ link.icon }}" href="{{ link.url }}" target="_blank" ><span class="description">{{ link.title }}</span></a></li>
