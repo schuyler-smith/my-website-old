@@ -17,18 +17,17 @@ pages:
   - title: Home
     url: /
   - title: About
-    url: /pages/about
+    url: /about
   - title: Publications
-    url: /pages/publications
+    url: /publications
   - title: Projects
-    url: /pages/projects
+    url: /projects
   - title: Software
-    url: /pages/software
+    url: /software
   - title: CV
-    url: /pages/CV
+    url: /cv
   - title: Photos
-    url: /pages/photos
-
+    url: /photos
 
 trips:
   - oaxaca

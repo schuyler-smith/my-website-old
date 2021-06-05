@@ -1,5 +1,5 @@
 ---
-permalink: /photo_gallery/trinidad
+permalink: /trinidad
 title: Schuyler - Trinidad Gallery
 place: Trinidad
 col1:
@@ -116,22 +116,22 @@ col4:
         <div class="row" style="margin-bottom: 10%"> 
                 <div class="column">
                     {% for pic in page.col1 %}
-                        <a href="{{ page.permalink }}/{{ pic }}"><img src="{{ page.permalink }}/resized_{{ pic }}" alt="{{ pic }}"/></a>
+                        <a href="/photo_gallery{{ page.permalink }}/{{ pic }}"><img src="/photo_gallery{{ page.permalink }}/resized_{{ pic }}" alt="{{ pic }}"/></a>
                     {% endfor %}
                 </div>
                 <div class="column">
                     {% for pic in page.col2 %}
-                        <a href="{{ page.permalink }}/{{ pic }}"><img src="{{ page.permalink }}/resized_{{ pic }}" alt="{{ pic }}"/></a>
+                        <a href="/photo_gallery{{ page.permalink }}/{{ pic }}"><img src="/photo_gallery{{ page.permalink }}/resized_{{ pic }}" alt="{{ pic }}"/></a>
                     {% endfor %}
                 </div>
                 <div class="column">
                     {% for pic in page.col3 %}
-                        <a href="{{ page.permalink }}/{{ pic }}"><img src="{{ page.permalink }}/resized_{{ pic }}" alt="{{ pic }}"/></a>
+                        <a href="/photo_gallery{{ page.permalink }}/{{ pic }}"><img src="/photo_gallery{{ page.permalink }}/resized_{{ pic }}" alt="{{ pic }}"/></a>
                     {% endfor %}
                 </div>
                 <div class="column">
                     {% for pic in page.col4 %}
-                        <a href="{{ page.permalink }}/{{ pic }}"><img src="{{ page.permalink }}/resized_{{ pic }}" alt="{{ pic }}"/></a>
+                        <a href="/photo_gallery{{ page.permalink }}/{{ pic }}"><img src="/photo_gallery{{ page.permalink }}/resized_{{ pic }}" alt="{{ pic }}"/></a>
                     {% endfor %}
                 </div>
         </div>

@@ -1,5 +1,5 @@
 ---
-permalink: /pages/publications
+permalink: /publications
 title: Schuyler - Publications
 ---
 <!DOCTYPE html>
@@ -51,11 +51,14 @@ title: Schuyler - Publications
         <div class="publications" >
         <div id="pubs">
         <br>
+        <font size="-1">
         <!-- ARTICLES -->
         <h4><span>Articles</span></h4>
             <ul>
                 {% for paper in site.data.publications.papers %}
-                    <li>{{ paper.authors }} <a href="{{ paper.url }}" target="_blank"><i>{{ paper.title }}</i></a>. {{ paper.info }}.
+                    <li>
+                        {{ paper.authors }} <a href="{{ paper.url }}" target="_blank"><i>{{ paper.title }}</i></a>. {{ paper.info }}.
+                    </li>
                 {% endfor %}
             </ul>
 
@@ -63,7 +66,9 @@ title: Schuyler - Publications
         <h4><span>Posters</span></h4>
             <ul>
                 {% for poster in site.data.publications.posters %}
-                    <li>{{ poster.authors }} <a href="{{ poster.url }}" target="_blank"><i>{{ poster.title }}</i></a>. {{ poster.info }}.
+                    <li>
+                        {{ poster.authors }} <a href="{{ poster.url }}" target="_blank"><i>{{ poster.title }}</i></a>. {{ poster.info }}.
+                    </li>
                 {% endfor %}
             </ul>
 
@@ -71,11 +76,14 @@ title: Schuyler - Publications
         <h4><span>Dissertations</span></h4>
             <ul>
                 {% for thesis in site.data.publications.theses %}
-                    <li>{{ thesis.authors }} <a href="{{ thesis.url }}" target="_blank"><i>{{ thesis.title }}</i></a>. {{ thesis.info }}.
+                    <li>
+                        {{ thesis.authors }} <a href="{{ thesis.url }}" target="_blank"><i>{{ thesis.title }}</i></a>. {{ thesis.info }}.
+                    </li>
                 {% endfor %}
             </ul>
         </div>
         </div>
+        </font>
 
     <!-- BOLD MY NAME -->
     <script>

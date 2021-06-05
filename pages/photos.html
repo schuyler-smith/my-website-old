@@ -1,5 +1,5 @@
 ---
-permalink: /pages/photos
+permalink: /photos
 title: Schuyler - Photos
 ---
 <!DOCTYPE html>
@@ -46,7 +46,7 @@ title: Schuyler - Photos
         <div class="row"> 
             {% for trip in site.data.config.trips %}
             <div class="container">
-              <a href="/photo_gallery/{{ trip }}.html">
+              <a href="/{{ trip }}">
               <img src="/photo_gallery/covers/{{ trip }}.jpg" alt="{{ trip }}" class="image" style="width:100%">
               <div class="middle">
                 <div class="photo_text">{{ trip }}</div>
