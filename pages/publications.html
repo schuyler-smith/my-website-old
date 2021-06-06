@@ -57,7 +57,13 @@ title: Schuyler - Publications
             <ul>
                 {% for paper in site.data.publications.papers %}
                     <li>
-                        {{ paper.authors }} <a href="{{ paper.url }}" target="_blank"><i>{{ paper.title }}</i></a>. {{ paper.info }}.
+                        {{ paper.authors }} 
+                        {% if paper.url %}
+                            <a href="{{ paper.url }}" target="_blank">
+                        {% endif %}
+                        <i>{{ paper.title }}</i>
+                        {% if paper.url %}</a>. {% endif %}
+                        {{ paper.info }}.
                     </li>
                 {% endfor %}
             </ul>
@@ -67,20 +73,32 @@ title: Schuyler - Publications
             <ul>
                 {% for poster in site.data.publications.posters %}
                     <li>
-                        {{ poster.authors }} <a href="{{ poster.url }}" target="_blank"><i>{{ poster.title }}</i></a>. {{ poster.info }}.
+                        {{ poster.authors }} 
+                        {% if poster.url %}
+                            <a href="{{ poster.url }}" target="_blank">
+                        {% endif %}
+                        <i>{{ poster.title }}</i>
+                        {% if poster.url %}</a>. {% endif %}
+                        {{ poster.info }}.
                     </li>
                 {% endfor %}
             </ul>
 
         <!-- DISSERTATIONS -->
-        <h4><span>Dissertations</span></h4>
+<!--         <h4><span>Dissertations</span></h4>
             <ul>
                 {% for thesis in site.data.publications.theses %}
                     <li>
-                        {{ thesis.authors }} <a href="{{ thesis.url }}" target="_blank"><i>{{ thesis.title }}</i></a>. {{ thesis.info }}.
+                        {{ thesis.authors }} 
+                        {% if thesis.url %}
+                            <a href="{{ thesis.url }}" target="_blank">
+                        {% endif %}
+                            <i>{{ thesis.title }}</i>
+                        {% if thesis.url %}</a>. {% endif %}
+                        {{ thesis.info }}.
                     </li>
                 {% endfor %}
-            </ul>
+            </ul> -->
         </div>
         </div>
         </font>

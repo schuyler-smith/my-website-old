@@ -1,0 +1,29 @@
+
+
+- title: DARTE-QM
+  url: https://schuyler-smith.github.io/DARTE-QM/
+  abstract: Effective monitoring of antibiotic resistance genes and their dissemination in environmental 43ecosystems has been hindered by the cost and efficiency of methods available for the task. We 44developed a method entitled the Diversity of Antibiotic Resistance genes and Transfer Elements-45Quantitative Monitoring (DARTE-QM), a system implementing high-throughput sequencing to 46simultaneously sequence thousands of antibiotic resistant genes representing a full-spectrum of 47antibiotic resistance classes commonly seen inenvironmental systems. In this study, we demonstrated 48DARTE-QM by screening 673 antibiotic resistance genes within environmental samples originated 49from manure, soil, and animal feces, in addition to a mock-community used as a control to test 50performance.DARTE-QM offers a supplemental approach to studying antibiotic resistance in 51environmental microbiomes, showing advantages in efficiency and the ability to scale for many 52samples. This method provides a means of data acquisitionthat will alleviate the obstacles that many 53researchers in this area face.
+  image_1: "https://schuyler-smith.github.io/DARTE-QM/metagenome_comparison_files/figure-html/target_profile-1.png"
+  image_2: "https://schuyler-smith.github.io/DARTE-QM/sample_analysis_files/figure-html/pca_normalized-1.png"
+
+- title: Harmful Algal Blooms in Iowa Lakes
+  url: https://schuyler-smith.github.io/IA_Lake_Microcystin/
+  abstract: 
+  image_1: "https://schuyler-smith.github.io/IA_Lake_Microcystin/index_files/figure-html/map-1.png"
+  image_2: "https://schuyler-smith.github.io/IA_Lake_Microcystin/molecular_files/figure-html/pH_correlation-1.png" 
+  
+- title: phylosmith
+  url: https://schuyler-smith.github.io/phylosmith/
+  abstract: "phylosmith is a conglomeration of functions written to process and analyze phyloseq-class objects. Phyloseq objects are a great data-standard for microbiome, gene-expression, and many other data types.
+    <br>
+    <br>
+    A lot of these functions are just to make “data-wrangling” easier for the user. Others will implement complex routines in a, hopefully, efficient and concise manner. I have also made functions to make figures for quick examination of data, but they may or may not be suitable for publication as some may require parameter optimization."
+  image_1: 
+  image_2: 
+
+- title: Development and application of a bioinformatics pipeline for genotyping-by-sequencing (GBS) of autotetraploid potato
+  abstract: "Genotyping-by-sequencing (GBS) is being widely used in diploid crops as an efficient technology for identifying genome-wide markers to assist breeding. Both genome-wide association studies and genomic selection have benefited from the availability of GBS markers (Morris et al. 2012; Poland et al. 2012). One of the challenges with GBS is how to handle missing data, but for diploids there are many accurate and accessible options for marker imputation (Rutkoski et al. 2013; Swarts et al. 2014). 
+   For autotetraploid crops, such as potato (Solanum tuberosum), the cost effectiveness of GBS is less certain due to the higher read depths (50–60X) needed to accurately differentiate the three heterozygous genotypes. There is also less information published about imputation methods and accuracy. Our objectives were to (1) develop a bioinformatics pipeline for GBS variant discovery, genotype calling, and imputation in autotetraploids, (2) apply the pipeline to a panel of elite potato breeding lines and varieties from across North America, and (3) interpret the results in the context of a competing marker technology: the potato Infinium SNP array (Douches et al. 2014)."
+  url: 
+  image_1: https://github.com/schuyler-smith/posters/blob/main/images/autotetraploid_snp_depth.png?raw=true
+  image_2: https://github.com/schuyler-smith/posters/blob/main/images/autotetraploid_snp_maf.png?raw=true

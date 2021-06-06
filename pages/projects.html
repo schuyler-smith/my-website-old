@@ -43,41 +43,42 @@ title: Schuyler - Projects
 
 <!--    PAGE     -->
 
-        <div class="publications" >
+        <div class="projects" >
         <div id="sw">
         <br>
             <ul>
-                <li><font size="+2"><b><a href="https://schuyler-smith.github.io/DARTE-QM/" target="_blank">DARTE-QM</a></b></font><br><br>
-                <img src="https://schuyler-smith.github.io/DARTE-QM/metagenome_comparison_files/figure-html/target_profile-1.png" 
-                style="
-                max-width: 50%;
-                max-height: 100vh;
-                margin: auto;">
-                <img src="https://schuyler-smith.github.io/DARTE-QM/sample_analysis_files/figure-html/pca_normalized-1.png" 
-                style="
-                max-width: 50%;
-                max-height: 22.5vh;
-                margin: auto;">
+                {% for project in site.data.projects %}
+                <li>
+                    <font size="+2"><b>
+                    {% if project.url %}
+                        <a href="{{ project.url }}" target="_blank">
+                    {% endif %}
+                    {{ project.title }}
+                    {% if project.url %}</a>{% endif %}
+                    </b></font>
+                    <br>
+                    <br>
+                    {% if project.abstract %}
+                        {{ project.abstract }}
+                        <br>
+                        <br>
+                    {% endif %}
+                    {% if project.image_1 %}
+                    <img src="{{ project.image_1 }}" 
+                    style="
+                    max-width: 50%;
+                    max-height: 30vh;
+                    margin: auto;">
+                    {% endif %}
+                    {% if project.image_2 %}
+                    <img src="{{ project.image_2 }}" 
+                    style="
+                    max-width: 50%;
+                    max-height: 30vh;
+                    margin: auto;">
+                    {% endif %}
                 </li>
-                <!--  -->
-                <!--  -->
-                <li><font size="+2"><b><a href="https://schuyler-smith.github.io/IA_Lake_Microcystin/" target="_blank">HABs</a></b></font><br><br>
-                <font size="-1">
-                </font>
-                <img src="https://schuyler-smith.github.io/IA_Lake_Microcystin/index_files/figure-html/map-1.png" 
-                style="
-                max-width: 50%;
-                max-height: 30vh;
-                margin: auto;">
-                <img src="https://schuyler-smith.github.io/IA_Lake_Microcystin/molecular_files/figure-html/pH_correlation-1.png" 
-                style="
-                max-width: 50%;
-                max-height: 30vh;
-                margin: auto;">
-                </li>
-                </li>
-                <!--  -->
-                <!--  -->
+                {% endfor %}
             </ul>
         </div>
         </div>
