@@ -21,6 +21,7 @@ title: Schuyler - Projects
         <link rel="stylesheet" href="/css/academicons/css/academicons.min.css"/>
         <!-- LOAD LOCAL CSS -->
         <link rel="stylesheet" href="{{ site.baseurl }}{{ '/css/main.css' }}">
+        <link rel="stylesheet" href="{{ site.baseurl }}{{ '/css/mobile.css' }}">
     </head>
     <body class="subpage">
         <!-- BACKGROUND IMAGE -->
@@ -87,7 +88,7 @@ title: Schuyler - Projects
         <div id="medialist-page">
             <ul>
                 {% for link in site.data.media %}
-                    <li><a class="{{ link.icon }}" href="{{ link.url }}" target="_blank" ><span class="description">{{ link.title }}</span></a></li>
+                    <li><a class="{{ link.icon }}" href="{{ link.url }}" target="_blank" ><span class="description-page">{{ link.title }}</span></a></li>
                 {% endfor %}
             </ul>
         </div>
