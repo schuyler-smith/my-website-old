@@ -48,6 +48,7 @@ title: Schuyler - Projects
         <br>
             <ul>
                 {% for project in site.data.projects %}
+                {% if project.title %}
                 <li>
                     <font size="+2"><b>
                     {% if project.url %}
@@ -78,6 +79,7 @@ title: Schuyler - Projects
                     margin: auto;">
                     {% endif %}
                 </li>
+                {% endif %}
                 {% endfor %}
             </ul>
         </div>
