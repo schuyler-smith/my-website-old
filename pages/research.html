@@ -1,6 +1,6 @@
 ---
-permalink: /projects
-title: Schuyler - Projects
+permalink: /research
+title: Schuyler - Research
 ---
 <!DOCTYPE html>
 <html>
@@ -43,11 +43,11 @@ title: Schuyler - Projects
 
 <!--    PAGE     -->
 
-        <div class="projects" >
+        <div class="research" >
         <div id="sw">
         <br>
             <ul>
-                {% for project in site.data.projects %}
+                {% for project in site.data.research %}
                 {% if project.title %}
                 <li>
                     <font size="+2"><b>
@@ -67,14 +67,14 @@ title: Schuyler - Projects
                     {% if project.image_1 %}
                     <img src="{{ project.image_1 }}" 
                     style="
-                    max-width: 45%;
+                    max-width: 80%;
                     max-height: 30vh;
                     margin: auto;">
                     {% endif %}
                     {% if project.image_2 %}
                     <img src="{{ project.image_2 }}" 
                     style="
-                    max-width: 45%;
+                    max-width: 80%;
                     max-height: 30vh;
                     margin: auto;">
                     {% endif %}
