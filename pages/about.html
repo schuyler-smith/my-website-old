@@ -102,12 +102,13 @@ title: Schuyler - About
             {% if site.data.about.skills %}
                 <p>
                 <b><font size="+2">Skills</font></b>
-                <ul style="columns: 3; -webkit-columns: 3; -moz-columns: 3;">
+                <ul class = "about-list">
                     {% for skill in site.data.about.skills %}
-                        <li> {{ skill }} </li><br>
+                        <li> {{ skill }} </li>
                     {% endfor %}
                 </ul>   
                 </p>
+                <br>
             {% endif %}
 
             {% if site.data.about.personal %}
